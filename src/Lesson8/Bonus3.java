@@ -32,11 +32,11 @@ public class Bonus3 {
 
     private static Comparator<String> ALPHABETICAL_ORDER = new Comparator<String>() {
         public int compare(String str1, String str2) {
-            String s1=str1.substring(0,1);
-            String s2=str2.substring(0,2);
-            int res = String.CASE_INSENSITIVE_ORDER.compare(s1, s2);
+            //String s1=str1.substring(num,num+1);
+            //String s2=str2.substring(num,num+1);
+            int res = String.CASE_INSENSITIVE_ORDER.compare(str1, str2);
             if (res == 0) {
-                res = s1.compareTo(s2);
+                res = str1.compareTo(str2);
             }
             return res;
         }
