@@ -17,7 +17,7 @@ public class Final1_9 {
 
         Map<String,Integer>map=new HashMap<String, Integer>();
         for (int i = 0; i < array.size(); i++) {
-            if (!map.containsKey(array.get(i))){
+            if (!map.containsKey(array.get(i))){   //check was the record in a map already
                 int count=0;
                 map.put(array.get(i),count);
                 for (int j = i; j < array.size(); j++) {
